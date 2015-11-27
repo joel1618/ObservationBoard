@@ -1,4 +1,4 @@
-﻿(function () {
+﻿(function (moment) {
     "use strict";
 
     var app = angular.module('module');
@@ -27,6 +27,15 @@
         }
         getClients();
 
+        //Timer
+        function getTime() {
+            $scope.time = moment().format("MM/DD/YYYY hh:mm:ss");
+            $timeout(function () {
+                getTime();
+            }, 1000);
+        }
+        getTime();
+
         $scope.gridOptions = {
             data: $scope.clients,
             enableFiltering: true,
@@ -34,12 +43,17 @@
                 {
                     field: 'Id',
                     enableFiltering: true,
-                    name: 'Client',
-                    cellTemplate: '<div>{{row.entity.Id}} - {{row.entity.Name}}</div>',
+                    name: 'Id',
+                    //cellTemplate: '<div>{{row.entity.Id}} - {{row.entity.Name}}</div>',
                     rowHeight: 50
                 },
                 {
+                    field: 'Name',
+                    name: 'Name'
+                },
+                {
                     field: 'OpenedDT',
+                    enableFiltering: false,
                     name: 'Opened',
                     cellTemplate: '../Scripts/spa/apps/ObservationBoard/Views/CellTemplates/celltemplate.html',
                     rowHeight: 50
@@ -48,4 +62,4 @@
             ]
         }
     }]);
-})();
+})(moment);
