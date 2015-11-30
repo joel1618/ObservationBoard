@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Http;
 using ObservationBoard.Models;
+using ObservationBoardCore = ObservationBoard.Models.ObservationBoard;
 
 namespace ObservationBoard.API
 {
@@ -11,13 +12,13 @@ namespace ObservationBoard.API
     {
         //TODO: Inject a service or repo that will serve the data from sql.  
         //TODO: Authorize the action if exposed publicly.
-        Client[] clients = new Client[]
+        ObservationBoardCore[] clients = new ObservationBoardCore[]
         {
-            new Client { Id = 1 },
-            new Client { Id = 2 },
-            new Client { Id = 3 }
+            new ObservationBoardCore { Id = 1 },
+            new ObservationBoardCore { Id = 2 },
+            new ObservationBoardCore { Id = 3 }
         };
-        public IEnumerable<Client> GetAll()
+        public IEnumerable<ObservationBoardCore> GetAll()
         {
             return clients;
         }

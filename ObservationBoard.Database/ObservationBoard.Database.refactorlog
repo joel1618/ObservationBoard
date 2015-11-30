@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="e19b474f-1710-46cb-b080-da5075c3330e" ChangeDateTime="11/30/2015 04:48:30">
+    <Property Name="ElementName" Value="[dbo].[ObservationBoard].[Demo]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ObservationBoard]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DemographicTimeStamp" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a5e0dca2-cbdb-452e-935d-33013252bd82" ChangeDateTime="11/30/2015 04:50:33">
+    <Property Name="ElementName" Value="[dbo].[ObservationBoard].[CrisisScreeningDateTime]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ObservationBoard]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CrisisScreeningTimeStamp" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d4dc7e8e-a8e2-47af-bb27-c6178af2742b" ChangeDateTime="11/30/2015 04:50:46">
+    <Property Name="ElementName" Value="[dbo].[ObservationBoard].[Asses]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ObservationBoard]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AssessmentTimeStamp" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cd801a9f-e1af-41c9-9c8b-6c10d73125f2" ChangeDateTime="11/30/2015 04:52:37">
+    <Property Name="ElementName" Value="[dbo].[ObservationBoard].[SubUnit]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ObservationBoard]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SubUnitId" />
+  </Operation>
+</Operations>

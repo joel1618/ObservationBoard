@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ObservationBoard.Models
+namespace ObservationBoard.Services
 {
-    public class Client
+    public class ObservationBoardService
     {
-        public int Id { get; set; }
     }
 }

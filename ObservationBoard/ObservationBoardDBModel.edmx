@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ObservationBoardModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ObservationBoard">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Client" Type="nvarchar" MaxLength="50" />
+          <Property Name="OpenedTimeStamp" Type="datetime" />
+          <Property Name="AssignedBed" Type="int" />
+          <Property Name="Status" Type="nvarchar" MaxLength="50" />
+          <Property Name="AccompaniedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="DemographicTimeStamp" Type="datetime" />
+          <Property Name="GeneralConsentTimeStamp" Type="datetime" />
+          <Property Name="Photo" Type="nvarchar" MaxLength="50" />
+          <Property Name="PhotoTimeStamp" Type="datetime" />
+          <Property Name="Ansa" Type="nvarchar" MaxLength="50" />
+          <Property Name="CrisisScreeningTimeStamp" Type="datetime" />
+          <Property Name="AssessmentTimeStamp" Type="datetime" />
+          <Property Name="FinancialTimeStamp" Type="datetime" />
+          <Property Name="EAndMTimeStamp" Type="datetime" />
+          <Property Name="ROSTimeStamp" Type="datetime" />
+          <Property Name="UDSTimeStamp" Type="datetime" />
+          <Property Name="FollowUpAndDisposition" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastNursingAssessmentTimeStamp" Type="datetime" />
+          <Property Name="SubUnitId" Type="nvarchar" MaxLength="50" />
+          <Property Name="BedsOccupied" Type="int" />
+          <Property Name="BedsAvailable" Type="int" />
+          <Property Name="ss" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityContainer Name="ObservationBoardModelStoreContainer">
+          <EntitySet Name="ObservationBoard" EntityType="Self.ObservationBoard" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ObservationBoardModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ObservationBoard">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Client" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OpenedTimeStamp" Type="DateTime" Precision="3" />
+          <Property Name="AssignedBed" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AccompaniedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DemographicTimeStamp" Type="DateTime" Precision="3" />
+          <Property Name="GeneralConsentTimeStamp" Type="DateTime" Precision="3" />
+          <Property Name="Photo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PhotoTimeStamp" Type="DateTime" Precision="3" />
+          <Property Name="Ansa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CrisisScreeningTimeStamp" Type="DateTime" Precision="3" />
+          <Property Name="AssessmentTimeStamp" Type="DateTime" Precision="3" />
+          <Property Name="FinancialTimeStamp" Type="DateTime" Precision="3" />
+          <Property Name="EAndMTimeStamp" Type="DateTime" Precision="3" />
+          <Property Name="ROSTimeStamp" Type="DateTime" Precision="3" />
+          <Property Name="UDSTimeStamp" Type="DateTime" Precision="3" />
+          <Property Name="FollowUpAndDisposition" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastNursingAssessmentTimeStamp" Type="DateTime" Precision="3" />
+          <Property Name="SubUnitId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BedsOccupied" Type="Int32" />
+          <Property Name="BedsAvailable" Type="Int32" />
+          <Property Name="ss" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="ObservationBoardEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ObservationBoards" EntityType="Self.ObservationBoard" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ObservationBoardModelStoreContainer" CdmEntityContainer="ObservationBoardEntities">
+          <EntitySetMapping Name="ObservationBoards">
+            <EntityTypeMapping TypeName="ObservationBoardModel.ObservationBoard">
+              <MappingFragment StoreEntitySet="ObservationBoard">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Client" ColumnName="Client" />
+                <ScalarProperty Name="OpenedTimeStamp" ColumnName="OpenedTimeStamp" />
+                <ScalarProperty Name="AssignedBed" ColumnName="AssignedBed" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="AccompaniedBy" ColumnName="AccompaniedBy" />
+                <ScalarProperty Name="DemographicTimeStamp" ColumnName="DemographicTimeStamp" />
+                <ScalarProperty Name="GeneralConsentTimeStamp" ColumnName="GeneralConsentTimeStamp" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="PhotoTimeStamp" ColumnName="PhotoTimeStamp" />
+                <ScalarProperty Name="Ansa" ColumnName="Ansa" />
+                <ScalarProperty Name="CrisisScreeningTimeStamp" ColumnName="CrisisScreeningTimeStamp" />
+                <ScalarProperty Name="AssessmentTimeStamp" ColumnName="AssessmentTimeStamp" />
+                <ScalarProperty Name="FinancialTimeStamp" ColumnName="FinancialTimeStamp" />
+                <ScalarProperty Name="EAndMTimeStamp" ColumnName="EAndMTimeStamp" />
+                <ScalarProperty Name="ROSTimeStamp" ColumnName="ROSTimeStamp" />
+                <ScalarProperty Name="UDSTimeStamp" ColumnName="UDSTimeStamp" />
+                <ScalarProperty Name="FollowUpAndDisposition" ColumnName="FollowUpAndDisposition" />
+                <ScalarProperty Name="LastNursingAssessmentTimeStamp" ColumnName="LastNursingAssessmentTimeStamp" />
+                <ScalarProperty Name="SubUnitId" ColumnName="SubUnitId" />
+                <ScalarProperty Name="BedsOccupied" ColumnName="BedsOccupied" />
+                <ScalarProperty Name="BedsAvailable" ColumnName="BedsAvailable" />
+                <ScalarProperty Name="ss" ColumnName="ss" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
