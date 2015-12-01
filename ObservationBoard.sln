@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObservationBoard", "Observa
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ObservationBoard.Database", "ObservationBoard.Database\ObservationBoard.Database.sqlproj", "{D54C318E-5192-43DD-A778-0A8949FFCF48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObservationBoard.Core", "ObservationBoard.Core\ObservationBoard.Core.csproj", "{91F64330-2663-4C10-98E6-DA349399C5EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObservationBoard.Sql", "ObservationBoard.Sql\ObservationBoard.Sql.csproj", "{D0F24CD7-784F-40E2-939D-B0ACE6C3DF1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,14 @@ Global
 		{D54C318E-5192-43DD-A778-0A8949FFCF48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D54C318E-5192-43DD-A778-0A8949FFCF48}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D54C318E-5192-43DD-A778-0A8949FFCF48}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{91F64330-2663-4C10-98E6-DA349399C5EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F64330-2663-4C10-98E6-DA349399C5EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91F64330-2663-4C10-98E6-DA349399C5EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91F64330-2663-4C10-98E6-DA349399C5EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0F24CD7-784F-40E2-939D-B0ACE6C3DF1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0F24CD7-784F-40E2-939D-B0ACE6C3DF1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0F24CD7-784F-40E2-939D-B0ACE6C3DF1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0F24CD7-784F-40E2-939D-B0ACE6C3DF1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

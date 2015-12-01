@@ -21,6 +21,5 @@
     [LastNursingAssessmentTimeStamp] DATETIME NULL, 
     [SubUnitId] NVARCHAR(50) NULL, 
     [BedsOccupied] INT NULL, 
-    [BedsAvailable] INT NULL, 
-    [ss] NCHAR(10) NULL
+    [BedsAvailable] INT NULL 
 )

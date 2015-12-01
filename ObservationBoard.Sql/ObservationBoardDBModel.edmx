@@ -67,7 +67,6 @@
           <Property Name="SubUnitId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="BedsOccupied" Type="Int32" />
           <Property Name="BedsAvailable" Type="Int32" />
-          <Property Name="ss" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
         </EntityType>
         <EntityContainer Name="ObservationBoardEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ObservationBoards" EntityType="Self.ObservationBoard" />
@@ -103,7 +102,6 @@
                 <ScalarProperty Name="SubUnitId" ColumnName="SubUnitId" />
                 <ScalarProperty Name="BedsOccupied" ColumnName="BedsOccupied" />
                 <ScalarProperty Name="BedsAvailable" ColumnName="BedsAvailable" />
-                <ScalarProperty Name="ss" ColumnName="ss" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

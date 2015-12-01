@@ -36,6 +36,5 @@ namespace ObservationBoard
         public string SubUnitId { get; set; }
         public Nullable<int> BedsOccupied { get; set; }
         public Nullable<int> BedsAvailable { get; set; }
-        public string ss { get; set; }
     }
 }
