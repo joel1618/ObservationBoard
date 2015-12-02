@@ -20,6 +20,7 @@ namespace ObservationBoard.API
 
         //TODO: Inject a service or repo that will serve the data from sql.  
         //TODO: Authorize the action if exposed publicly.
+        //TODO: Make the return type "HttpResponseMessage" so that http errors can be returned correctly along with data on 200 success
         public IEnumerable<ObservationBoardCore> GetAll()
         {
             //ObservationBoardCore[] clients = new ObservationBoardCore[]
