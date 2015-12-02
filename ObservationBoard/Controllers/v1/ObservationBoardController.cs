@@ -17,10 +17,14 @@ namespace ObservationBoard.API
         {
             _service = service;
         }
-
-        //TODO: Inject a service or repo that will serve the data from sql.  
+        
         //TODO: Authorize the action if exposed publicly.
+        // http://www.asp.net/web-api/overview/security/authentication-filters
         //TODO: Make the return type "HttpResponseMessage" so that http errors can be returned correctly along with data on 200 success
+        //TODO: Work on explicit path routing
+        //  http://stackoverflow.com/questions/21152168/adding-an-explicit-action-route-to-asp-net-web-api-controller
+        //TODO: Think about attribute routing
+        //  http://www.asp.net/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2
         public IEnumerable<ObservationBoardCore> GetAll()
         {
             //ObservationBoardCore[] clients = new ObservationBoardCore[]
