@@ -25,6 +25,7 @@ namespace ObservationBoard.API
         //  http://stackoverflow.com/questions/21152168/adding-an-explicit-action-route-to-asp-net-web-api-controller
         //TODO: Think about attribute routing
         //  http://www.asp.net/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2
+        //TODO: Add async Task<object> to service layer and then call using await keyword
         public IEnumerable<ObservationBoardCore> GetAll()
         {
             //ObservationBoardCore[] clients = new ObservationBoardCore[]
