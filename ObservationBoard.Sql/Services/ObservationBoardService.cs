@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using ObservationBoard.Services.Interfaces;
 using ObservationBoard.Services.Extensions;
+using System.Threading.Tasks;
 using ObservationBoardCore = ObservationBoard.Models.ObservationBoard;
 
 namespace ObservationBoard.Services
@@ -16,7 +15,7 @@ namespace ObservationBoard.Services
             _context = context;
         }
 
-        public IEnumerable<ObservationBoardCore> GetAll()
+        public async Task<IEnumerable<ObservationBoardCore>> GetAll()
         {
             return _context.ObservationBoards.ToList().Select(x => x.ToCore());
         }
