@@ -8,6 +8,8 @@ namespace ObservationBoard.Controllers
 {
     public class HomeController : Controller
     {
+        //TODO: Here we can lockdown the app to be only used on the domain.
+        //[Authorize(Roles = "DOMAIN\\GROUP")]
         public ActionResult Index()
         {
             return View();
