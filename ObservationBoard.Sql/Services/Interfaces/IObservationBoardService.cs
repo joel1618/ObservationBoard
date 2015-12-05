@@ -9,6 +9,6 @@ namespace ObservationBoard.Services.Interfaces
 {
     public interface IObservationBoardService
     {
-        Task<IEnumerable<ObservationBoardCore>> GetAll();
+        Task<List<ObservationBoardCore>> GetAll();
     }
 }

@@ -15,9 +15,9 @@ namespace ObservationBoard.Services
             _context = context;
         }
 
-        public async Task<IEnumerable<ObservationBoardCore>> GetAll()
+        public async Task<List<ObservationBoardCore>> GetAll()
         {
-            return _context.ObservationBoards.ToList().Select(x => x.ToCore());
+            return _context.ObservationBoards.ToList().Select(x => x.ToCore()).ToList();
         }
     }
 }

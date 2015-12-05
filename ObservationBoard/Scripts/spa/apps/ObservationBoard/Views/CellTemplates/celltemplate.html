@@ -1,4 +1,2 @@
-<div ng-show="row.entity.OpenedDT !== ''" class="text-center"><img height="30px" width="30px" src="/Content/Images/yes.jpg"/></div>
-<div ng-show="row.entity.OpenedDT === ''" class="text-center"><img height="30px" width="30px" src="/Content/Images/no.jpg"/></div>
-
-<!--<div ng-show="row.entity.OpenedDT !== ''">{{row.entity.OpenedDT}}</div>-->
+<div ng-show="COL_FIELD !== undefined && COL_FIELD !== null && COL_FIELD !== ''" class="text-center"><img height="30px" width="30px" src="/Content/Images/yes.jpg"/></div>
+<div ng-show="COL_FIELD === undefined || COL_FIELD === null || COL_FIELD === ''" class="text-center"><img height="30px" width="30px" src="/Content/Images/no.jpg"/></div>

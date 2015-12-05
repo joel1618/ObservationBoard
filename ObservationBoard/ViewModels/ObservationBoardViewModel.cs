@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ObservationBoard.Models
+namespace ObservationBoard.ViewModels
 {
-    public class ObservationBoard
+    public class ObservationBoardViewModel
     {
         public int Id { get; set; }
         public string Client { get; set; }

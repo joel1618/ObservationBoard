@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ObservationBoardCore = ObservationBoard.Models.ObservationBoard;
+using ObservationBoardViewModel = ObservationBoard.ViewModels.ObservationBoardViewModel;
 
-namespace ObservationBoard.Services.Extensions
+namespace ObservationBoard.Extensions
 {
     public static class ObservationBoardExtension
     {
-        public static ObservationBoardCore ToCore(this ObservationBoard item)
+        public static ObservationBoardViewModel ToViewModel(this ObservationBoardCore item)
         {
-            return new ObservationBoardCore()
+            return new ObservationBoardViewModel()
             {
                 Id = item.Id,
                 Client = item.Client,
