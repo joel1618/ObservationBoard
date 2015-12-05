@@ -31,6 +31,7 @@ namespace ObservationBoard.Services.Extensions
                 ROSTimeStamp = item.ROSTimeStamp,
                 UDSTimeStamp = item.UDSTimeStamp,
                 FollowUpAndDisposition = item.FollowUpAndDisposition,
+                LastNursingAssessmentTimeStamp = item.LastNursingAssessmentTimeStamp,
                 SubUnitId = item.SubUnitId,
                 BedsOccupied = item.BedsOccupied,
                 BedsAvailable = item.BedsAvailable

@@ -10,23 +10,23 @@ namespace ObservationBoard.ViewModels
     {
         public int Id { get; set; }
         public string Client { get; set; }
-        public DateTime? OpenedTimeStamp { get; set; }
+        public string OpenedTimeStamp { get; set; }
         public int? AssignedBed { get; set; }
         public string Status { get; set; }
         public string AccompaniedBy { get; set; }
-        public DateTime? DemographicTimeStamp { get; set; }
-        public DateTime? GeneralConsentTimeStamp { get; set; }
+        public string DemographicTimeStamp { get; set; }
+        public string GeneralConsentTimeStamp { get; set; }
         public string Photo { get; set; }
-        public DateTime? PhotoTimeStamp { get; set; }
+        public string PhotoTimeStamp { get; set; }
         public string Ansa { get; set; }
-        public DateTime? CrisisScreeningTimeStamp { get; set; }
-        public DateTime? AssessmentTimeStamp { get; set; }
-        public DateTime? FinancialTimeStamp { get; set; }
-        public DateTime? EAndMTimeStamp { get; set; }
-        public DateTime? ROSTimeStamp { get; set; }
-        public DateTime? UDSTimeStamp { get; set; }
+        public string CrisisScreeningTimeStamp { get; set; }
+        public string AssessmentTimeStamp { get; set; }
+        public string FinancialTimeStamp { get; set; }
+        public string EAndMTimeStamp { get; set; }
+        public string ROSTimeStamp { get; set; }
+        public string UDSTimeStamp { get; set; }
         public string FollowUpAndDisposition { get; set; }
-        public DateTime? LastNursingAssessmentTimeStamp { get; set; }
+        public string LastNursingAssessmentTimeStamp { get; set; }
         public string SubUnitId { get; set; }
         public int? BedsOccupied { get; set; }
         public int? BedsAvailable { get; set; }

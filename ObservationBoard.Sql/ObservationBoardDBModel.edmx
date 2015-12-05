@@ -31,7 +31,6 @@
           <Property Name="SubUnitId" Type="nvarchar" MaxLength="50" />
           <Property Name="BedsOccupied" Type="int" />
           <Property Name="BedsAvailable" Type="int" />
-          <Property Name="ss" Type="nchar" MaxLength="10" />
         </EntityType>
         <EntityContainer Name="ObservationBoardModelStoreContainer">
           <EntitySet Name="ObservationBoard" EntityType="Self.ObservationBoard" Schema="dbo" store:Type="Tables" />
