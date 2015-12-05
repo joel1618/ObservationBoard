@@ -116,7 +116,7 @@
                 },
                 {
                     field: 'LastNursingAssessmentTimeStamp',
-                    enableFiltering: false,
+                    enableFiltering: true,
                     name: 'Last Assessment',
                     rowHeight: 50
                 },
